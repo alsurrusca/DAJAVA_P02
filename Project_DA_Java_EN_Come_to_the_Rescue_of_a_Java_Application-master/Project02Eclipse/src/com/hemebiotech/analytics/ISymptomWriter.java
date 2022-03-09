@@ -8,7 +8,7 @@ import java.util.Map;
  *
  */
 
-public interface ISymptomWriter {
+    public interface ISymptomWriter {
 
     /**
      * If no data is available, return nothing (void)
@@ -16,8 +16,8 @@ public interface ISymptomWriter {
      * @return  a HashMap of all symptoms from listOrderSymptoms and duplicate it.
      */
 
-         void saveSymptoms(Map<String, Integer> listOrderSympoms);
+         void saveSymptoms(Map<String, Integer> listOrderSymptoms);
 
 
 
-}
+    }

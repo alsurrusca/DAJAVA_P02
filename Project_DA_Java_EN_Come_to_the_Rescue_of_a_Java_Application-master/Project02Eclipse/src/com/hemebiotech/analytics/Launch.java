@@ -3,16 +3,17 @@ package com.hemebiotech.analytics;
 /**
  * Main of this application
  * @author Alissia Surrusca
- * 
+ *
+ * Launch application
  */
 
-public class Launch {
+    public class Launch {
 
-    public static void main(String [] args) throws Exception {
+        public static void main(String [] args) throws Exception {
 
-        AnalyticsCounter analyticsCounter = new AnalyticsCounter();
+            AnalyticsCounter analyticsCounter = new AnalyticsCounter();
 
-        analyticsCounter.start();
+            analyticsCounter.start();
 
         }
 

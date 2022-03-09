@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
+ *
  * Read, count and make symptoms in order.
  *
  *
@@ -14,7 +15,7 @@ import java.util.stream.Collectors;
 
 
 
-public class AnalyticsCounter {
+	public class AnalyticsCounter {
 
 
 	private List<String> listSymptoms;
@@ -35,9 +36,12 @@ public class AnalyticsCounter {
 
 		/**
 		 * @see ReadSymptomDataFromFile
+		 *
+		 * return HashMap from file
 		 */
 
-		ReadSymptomDataFromFile readSymptomDataFromFile = new ReadSymptomDataFromFile("E:\\Etude\\Java\\Formation Java\\Projet 2\\Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master\\Project02Eclipse\\symptoms.txt");
+		String localDir = System.getProperty("user.dir");
+		ReadSymptomDataFromFile readSymptomDataFromFile = new ReadSymptomDataFromFile(localDir + "\\Ressources\\symptoms.txt");
 		listSymptoms = readSymptomDataFromFile.getSymptoms();
 
 
@@ -50,24 +54,24 @@ public class AnalyticsCounter {
 		/**
 		 *
 		 * @param listSymtoms
-		 * @return list which count all symptom's occurrences
+		 * @return list of all symptom's occurrences
 		 *
 		 */
 
-		for(String symptom : listSymptoms) {
+			for(String symptom : listSymptoms) {
 
-		if (listSymptomsCount.containsKey(symptom)) {
-			listSymptomsCount.put(symptom, (listSymptomsCount.get(symptom) + 1));
-		}
-			else {
-				listSymptomsCount.put(symptom, 1);
+				if (listSymptomsCount.containsKey(symptom)) {
+					listSymptomsCount.put(symptom, (listSymptomsCount.get(symptom) + 1));
+				}
+					else {
+						listSymptomsCount.put(symptom, 1);
+					}
+
+
 			}
 
 
 		}
-
-
-	}
 
 
 
@@ -75,7 +79,7 @@ public class AnalyticsCounter {
 	public void orderSymptoms()  {
 
 		/**
-		 * Create a set of the same elements contained in the hash map
+		 * Created hash map with keys as symptoms and values as occurencies
 		 * Order by key
 		 * @return LinkedHashMap
 		 *
@@ -102,7 +106,6 @@ public class AnalyticsCounter {
 
 		/**
 		 *
-		 * Call WriteSymptomsFromData
 		 *
 		 * @see WriteSymptomsFromData
 		 *
@@ -118,7 +121,7 @@ public class AnalyticsCounter {
 	}
 
 
-	}
+}
 
 
 
