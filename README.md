@@ -14,7 +14,7 @@
 ## Code fonctionnel
 ## Sortie du fichier dans un fichier externe
 
-# Version 1.1.0
+# Version 1.0.1
 ## Nettoyage du code et amélioration des chemins d'accès
 ## MAJ de la JavaDoc
 
