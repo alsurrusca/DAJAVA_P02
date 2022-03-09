@@ -37,7 +37,8 @@ import java.util.stream.Collectors;
 		 * @see ReadSymptomDataFromFile
 		 */
 
-		ReadSymptomDataFromFile readSymptomDataFromFile = new ReadSymptomDataFromFile("E:\\Etude\\Java\\Formation Java\\Projet 2\\Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master\\Project02Eclipse\\symptoms.txt");
+		String localDir = System.getProperty("user.dir");
+		ReadSymptomDataFromFile readSymptomDataFromFile = new ReadSymptomDataFromFile(localDir + "\\symptoms.txt");
 		listSymptoms = readSymptomDataFromFile.getSymptoms();
 
 
