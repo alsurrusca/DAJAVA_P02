@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
+ *
  * Read, count and make symptoms in order.
  *
  *
@@ -35,10 +36,12 @@ import java.util.stream.Collectors;
 
 		/**
 		 * @see ReadSymptomDataFromFile
+		 *
+		 * return HashMap from file
 		 */
 
 		String localDir = System.getProperty("user.dir");
-		ReadSymptomDataFromFile readSymptomDataFromFile = new ReadSymptomDataFromFile(localDir + "\\symptoms.txt");
+		ReadSymptomDataFromFile readSymptomDataFromFile = new ReadSymptomDataFromFile(localDir + "\\Ressources\\symptoms.txt");
 		listSymptoms = readSymptomDataFromFile.getSymptoms();
 
 
@@ -51,7 +54,7 @@ import java.util.stream.Collectors;
 		/**
 		 *
 		 * @param listSymtoms
-		 * @return list which count all symptom's occurrences
+		 * @return list of all symptom's occurrences
 		 *
 		 */
 
@@ -76,7 +79,7 @@ import java.util.stream.Collectors;
 	public void orderSymptoms()  {
 
 		/**
-		 * Create a set of the same elements contained in the hash map
+		 * Created hash map with keys as symptoms and values as occurencies
 		 * Order by key
 		 * @return LinkedHashMap
 		 *
@@ -103,7 +106,6 @@ import java.util.stream.Collectors;
 
 		/**
 		 *
-		 * Call WriteSymptomsFromData
 		 *
 		 * @see WriteSymptomsFromData
 		 *

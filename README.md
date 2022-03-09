@@ -10,7 +10,15 @@
 
 # MAJ Mars 2022
 
-# Version 1.0.0 
+# Version 1.0.0
+## Code fonctionnel
+## Sortie du fichier dans un fichier externe
+
+# Version 1.1.0
+## Nettoyage du code et amélioration des chemins d'accès
+## MAJ de la JavaDoc
+
+# 
 
 ### Langage Java 
 ### Instalalation 

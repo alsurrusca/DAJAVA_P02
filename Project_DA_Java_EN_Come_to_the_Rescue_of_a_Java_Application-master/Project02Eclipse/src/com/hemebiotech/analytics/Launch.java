@@ -3,7 +3,8 @@ package com.hemebiotech.analytics;
 /**
  * Main of this application
  * @author Alissia Surrusca
- * 
+ *
+ * Launch application
  */
 
     public class Launch {

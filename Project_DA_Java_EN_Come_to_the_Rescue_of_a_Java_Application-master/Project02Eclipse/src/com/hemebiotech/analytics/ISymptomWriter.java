@@ -16,7 +16,7 @@ import java.util.Map;
      * @return  a HashMap of all symptoms from listOrderSymptoms and duplicate it.
      */
 
-         void saveSymptoms(Map<String, Integer> listOrderSympoms);
+         void saveSymptoms(Map<String, Integer> listOrderSymptoms);
 
 
 

@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.Map;
 
 /**
- * Just to save the list of Symptoms, count and oder, in the external file
+ * To save the list of Symptoms, count and order, in the external file
  */
 
 
@@ -27,14 +27,17 @@ import java.util.Map;
 
         if (listOrderSymptoms != null) {
             try {
-                FileWriter writer = new FileWriter("result.out");
+                String localDir = System.getProperty("user.dir");
+                FileWriter writer = new FileWriter(localDir + "\\Ressources\\result.out");
 
 
                 for (Map.Entry<String, Integer> listFinalSymptoms : listOrderSymptoms.entrySet()) {
+
                     String key = listFinalSymptoms.getKey();
                     Integer value = listFinalSymptoms.getValue();
                     System.out.println(listFinalSymptoms);
-                    writer.write(key + " = " + value + "\n");
+                    writer.write(key + " = " + value + " \n ");
+
                 }
 
 
@@ -42,7 +45,7 @@ import java.util.Map;
 
             } catch (IOException e) {
 
-                System.err.println("Impossible de lire le contenu du fichier");
+                System.err.println("Impossible de lire le contenu du fichier ");
                 }
 
 
