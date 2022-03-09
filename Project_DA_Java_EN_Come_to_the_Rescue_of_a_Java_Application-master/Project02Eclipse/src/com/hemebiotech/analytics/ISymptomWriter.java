@@ -8,7 +8,7 @@ import java.util.Map;
  *
  */
 
-public interface ISymptomWriter {
+    public interface ISymptomWriter {
 
     /**
      * If no data is available, return nothing (void)
@@ -20,4 +20,4 @@ public interface ISymptomWriter {
 
 
 
-}
+    }

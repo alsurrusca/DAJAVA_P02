@@ -6,13 +6,13 @@ package com.hemebiotech.analytics;
  * 
  */
 
-public class Launch {
+    public class Launch {
 
-    public static void main(String [] args) throws Exception {
+        public static void main(String [] args) throws Exception {
 
-        AnalyticsCounter analyticsCounter = new AnalyticsCounter();
+            AnalyticsCounter analyticsCounter = new AnalyticsCounter();
 
-        analyticsCounter.start();
+            analyticsCounter.start();
 
         }
 

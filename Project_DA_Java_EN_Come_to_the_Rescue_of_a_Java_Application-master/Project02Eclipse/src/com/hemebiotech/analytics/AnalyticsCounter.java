@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 
 
 
-public class AnalyticsCounter {
+	public class AnalyticsCounter {
 
 
 	private List<String> listSymptoms;
@@ -54,20 +54,20 @@ public class AnalyticsCounter {
 		 *
 		 */
 
-		for(String symptom : listSymptoms) {
+			for(String symptom : listSymptoms) {
 
-		if (listSymptomsCount.containsKey(symptom)) {
-			listSymptomsCount.put(symptom, (listSymptomsCount.get(symptom) + 1));
-		}
-			else {
-				listSymptomsCount.put(symptom, 1);
+				if (listSymptomsCount.containsKey(symptom)) {
+					listSymptomsCount.put(symptom, (listSymptomsCount.get(symptom) + 1));
+				}
+					else {
+						listSymptomsCount.put(symptom, 1);
+					}
+
+
 			}
 
 
 		}
-
-
-	}
 
 
 
@@ -118,7 +118,7 @@ public class AnalyticsCounter {
 	}
 
 
-	}
+}
 
 
 

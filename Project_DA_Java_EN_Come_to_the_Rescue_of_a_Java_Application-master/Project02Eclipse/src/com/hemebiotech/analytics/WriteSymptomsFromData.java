@@ -9,7 +9,7 @@ import java.util.Map;
  */
 
 
-public class WriteSymptomsFromData  implements ISymptomWriter {
+    public class WriteSymptomsFromData  implements ISymptomWriter {
 
     /**
      *
@@ -40,11 +40,10 @@ public class WriteSymptomsFromData  implements ISymptomWriter {
 
                 writer.close();
 
-            } catch (
-                    IOException e) {
+            } catch (IOException e) {
 
                 System.err.println("Impossible de lire le contenu du fichier");
-            }
+                }
 
 
         }
