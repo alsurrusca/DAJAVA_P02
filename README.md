@@ -11,12 +11,12 @@
 # MAJ Mars 2022
 
 # Version 1.0.0
-## Code fonctionnel
-## Sortie du fichier dans un fichier externe
+### Code fonctionnel
+### Sortie du fichier dans un fichier externe
 
 # Version 1.0.1
-## Nettoyage du code et amélioration des chemins d'accès
-## MAJ de la JavaDoc
+### Nettoyage du code et amélioration des chemins d'accès
+### MAJ de la JavaDoc
 
 # 
 
