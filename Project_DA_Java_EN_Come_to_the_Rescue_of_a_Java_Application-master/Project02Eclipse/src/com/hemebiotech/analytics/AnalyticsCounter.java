@@ -105,6 +105,7 @@ import java.util.stream.Collectors;
 	private void saveSymptoms() {
 
 		/**
+		 * 
 		 *
 		 *
 		 * @see WriteSymptomsFromData
