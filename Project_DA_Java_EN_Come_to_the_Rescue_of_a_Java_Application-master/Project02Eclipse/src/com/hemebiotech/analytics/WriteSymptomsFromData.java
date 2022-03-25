@@ -36,7 +36,7 @@ import java.util.Map;
                     String key = listFinalSymptoms.getKey();
                     Integer value = listFinalSymptoms.getValue();
                     System.out.println(listFinalSymptoms);
-                    writer.write(key + " = " + value + " \n ");
+                    writer.write(key + " = " + value + "\n");
 
                 }
 
