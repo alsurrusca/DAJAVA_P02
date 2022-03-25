@@ -30,10 +30,17 @@ public class WriteSymptomsFromData implements ISymptomWriter {
 
                 for (Map.Entry<String, Integer> listFinalSymptoms : listOrderSymptoms.entrySet ()) {
 
+<<<<<<< HEAD
                     String key = listFinalSymptoms.getKey ();
                     Integer value = listFinalSymptoms.getValue ();
                     System.out.println (listFinalSymptoms);
                     writer.write (key + " = " + value + " \n ");
+=======
+                    String key = listFinalSymptoms.getKey();
+                    Integer value = listFinalSymptoms.getValue();
+                    System.out.println(listFinalSymptoms);
+                    writer.write(key + " = " + value + "\n");
+>>>>>>> petit_details
 
                 }
 
@@ -42,8 +49,13 @@ public class WriteSymptomsFromData implements ISymptomWriter {
 
             } catch (IOException e) {
 
+<<<<<<< HEAD
                 System.err.println ("Impossible de lire le contenu du fichier ");
             }
+=======
+                System.err.println(" Impossible de lire le contenu du fichier ");
+                }
+>>>>>>> petit_details
 
 
         }

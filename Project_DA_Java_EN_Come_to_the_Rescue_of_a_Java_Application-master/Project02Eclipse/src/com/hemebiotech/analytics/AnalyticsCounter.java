@@ -94,6 +94,7 @@ public class AnalyticsCounter {
 		/**
 		 *
 		 *
+		 *
 		 * @see WriteSymptomsFromData
 		 *
 		 * @return void
