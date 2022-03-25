@@ -45,7 +45,7 @@ import java.util.Map;
 
             } catch (IOException e) {
 
-                System.err.println("Impossible de lire le contenu du fichier ");
+                System.err.println(" Impossible de lire le contenu du fichier ");
                 }
 
 
