@@ -9,53 +9,44 @@ import java.util.Map;
  */
 
 
-public class WriteSymptomsFromData implements ISymptomWriter {
+    public class WriteSymptomsFromData  implements ISymptomWriter {
 
     /**
+     *
      * @param listOrderSymptoms : Hashmap with all informations
-     *                          Take all listFinalSymotms's key and value, print in new file, line per line
-     * @throws IOException if file can't be read
+     * Take all listFinalSymotms's key and value, print in new file, line per line
+     *
+     * @throws IOException
+     *              if file can't be read
      */
 
 
     @Override
-    public void saveSymptoms (Map<String, Integer> listOrderSymptoms) {
+    public  void saveSymptoms(Map <String, Integer> listOrderSymptoms) {
 
 
         if (listOrderSymptoms != null) {
             try {
-                String localDir = System.getProperty ("user.dir");
-                FileWriter writer = new FileWriter (localDir + "\\Ressources\\result.out");
+                String localDir = System.getProperty("user.dir");
+                FileWriter writer = new FileWriter(localDir + "\\Ressources\\result.out");
 
 
-                for (Map.Entry<String, Integer> listFinalSymptoms : listOrderSymptoms.entrySet ()) {
+                for (Map.Entry<String, Integer> listFinalSymptoms : listOrderSymptoms.entrySet()) {
 
-<<<<<<< HEAD
-                    String key = listFinalSymptoms.getKey ();
-                    Integer value = listFinalSymptoms.getValue ();
-                    System.out.println (listFinalSymptoms);
-                    writer.write (key + " = " + value + " \n ");
-=======
                     String key = listFinalSymptoms.getKey();
                     Integer value = listFinalSymptoms.getValue();
                     System.out.println(listFinalSymptoms);
                     writer.write(key + " = " + value + "\n");
->>>>>>> petit_details
 
                 }
 
 
-                writer.close ();
+                writer.close();
 
             } catch (IOException e) {
 
-<<<<<<< HEAD
-                System.err.println ("Impossible de lire le contenu du fichier ");
-            }
-=======
                 System.err.println(" Impossible de lire le contenu du fichier ");
                 }
->>>>>>> petit_details
 
 
         }
